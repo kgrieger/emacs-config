@@ -44,6 +44,12 @@
 (window-number-mode 1)
 (window-number-meta-mode 1)
 
+(defun eshell/clear ()
+  "04Dec2001 - sailor, to clear the eshell buffer."
+  (interactive)
+  (let ((inhibit-read-only t))
+    (erase-buffer)))
+
 
  ;; fix that ugly font
 (custom-set-variables
